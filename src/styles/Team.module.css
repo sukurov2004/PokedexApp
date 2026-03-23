@@ -1,0 +1,41 @@
+.container {
+  padding: 20px;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.winner {
+  background-color: #dcfce7;
+  border: 1px solid #4ade80;
+}
+
+.loser {
+  background-color: #fee2e2;
+  border: 1px solid #f87171;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.winnerText {
+  color: #16a34a;
+}
+
+.loserText {
+  color: #dc2626;
+}
+
+.total {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
