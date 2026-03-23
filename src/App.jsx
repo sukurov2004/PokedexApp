@@ -1,4 +1,3 @@
-
 import Header from "./components/Header";
 import Team from "./components/Team";
 import Battle from "./components/Battle";

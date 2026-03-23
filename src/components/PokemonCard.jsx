@@ -24,10 +24,6 @@ function PokemonCard({ pokemon }) {
         EXP {pokemon.base_experience}
       </p>
 
-      <button className={styles.button}>
-        Details
-      </button>
-
     </div>
   );
 }
