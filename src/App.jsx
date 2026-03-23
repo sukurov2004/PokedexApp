@@ -1,3 +1,4 @@
+
 import Header from "./components/Header";
 import Team from "./components/Team";
 import Battle from "./components/Battle";
@@ -12,7 +13,7 @@ function App() {
   const exp2 = calcExp(team2);
 
   return (
-    <div className="min-h-screen bg-gray-100 p-6">
+    <div className="min-h-screen p-6">
       <Header />
 
       <Team team={team1} total={exp1} isWinner={exp1 > exp2} />

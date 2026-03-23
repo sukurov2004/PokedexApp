@@ -1,9 +1,11 @@
+/* CONTAINER */
 .container {
   padding: 20px;
   border-radius: 16px;
   transition: all 0.3s ease;
 }
 
+/* WIN / LOSE */
 .winner {
   background-color: #dcfce7;
   border: 1px solid #4ade80;
@@ -14,6 +16,7 @@
   border: 1px solid #f87171;
 }
 
+/* TEXT */
 .title {
   font-size: 24px;
   font-weight: bold;
@@ -34,8 +37,70 @@
   margin-bottom: 16px;
 }
 
+/* FLEX GRID */
 .grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* CARD */
+.card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #e5e7eb;
+  transition: all 0.25s ease;
+  width: 120px;
+  flex: 0 0 auto;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* IMAGE */
+.image {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 6px;
+}
+
+/* TEXT DETAILS */
+.name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #4f46e5;
+}
+
+.type {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.exp {
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 3px;
+}
+
+/* BUTTON */
+.button {
+  margin-top: 6px;
+  padding: 4px 8px;
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: white;
+  font-size: 11px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
 }

@@ -1,51 +1,101 @@
 .card {
-  background: white;
-  border-radius: 16px;
-  padding: 16px;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 12px;
   text-align: center;
   border: 1px solid #e5e7eb;
-  transition: all 0.3s ease;
+  transition: all 0.25s ease;
+  width: 130px;
 }
 
 .card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
 }
 
 .image {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 8px;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 6px;
 }
 
 .name {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
   color: #4f46e5;
 }
 
 .type {
-  font-size: 14px;
+  font-size: 12px;
   color: #6b7280;
 }
 
 .exp {
-  font-size: 14px;
-  font-weight: bold;
-  margin-top: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 3px;
 }
 
 .button {
-  margin-top: 8px;
-  padding: 6px 10px;
-  background: #ef4444;
+  margin-top: 6px;
+  padding: 4px 8px;
+  background: linear-gradient(135deg, #ef4444, #dc2626);
   color: white;
-  font-size: 12px;
+  font-size: 11px;
   border-radius: 6px;
   border: none;
   cursor: pointer;
+  transition: 0.2s;
 }
 
 .button:hover {
-  background: #dc2626;
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* CONTAINER */
+
+.container {
+  padding: 16px;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.winner {
+  background-color: #dcfce7;
+  border: 1px solid #4ade80;
+}
+
+.loser {
+  background-color: #fee2e2;
+  border: 1px solid #f87171;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.winnerText {
+  color: #16a34a;
+}
+
+.loserText {
+  color: #dc2626;
+}
+
+.total {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+/* GRID */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  justify-items: center;
 }
