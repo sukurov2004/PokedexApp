@@ -1,6 +1,16 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styles from "../styles/PokemonCard.module.css";
 import { getImage } from "../helpers/getImage";
+
+PokemonCard.propTypes = {
+  pokemon: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    name: PropTypes.string.isRequired,
+    type: PropTypes.string.isRequired,
+    base_experience: PropTypes.number.isRequired
+  }).isRequired
+};
 
 function PokemonCard({ pokemon }) {
   return (
